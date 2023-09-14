@@ -1,0 +1,259 @@
+:root {
+    --main-color: #AED2FF;
+}
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+  
+body {
+  background-color: #dddbdb;
+  font-family: var(--font-hp);
+  font-weight: normal;
+}
+  
+header,
+section#luas h2:first-of-type,
+section#keliling h2:first-of-type {
+  align-items: center;
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+}
+  
+header h1 {
+  margin: 10px 0;
+}
+  
+header a {
+  align-items: baseline;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--font-brand);
+  font-size: 2.75rem;
+  gap: 0.25em;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+header a span {
+  font-size: 0.5em;
+}
+  
+main {
+  background-color: white;
+  border-radius: 5px;
+  margin: 1em auto;
+  max-width: 90vw;
+  padding: 0.5em 1.5em;
+}
+  
+section.info {
+  text-align: center;
+}
+  
+section.info h1 {
+  font-size: 2em;
+  margin: 15px 0;
+}
+  
+section.info p {
+  line-height: 1.5;
+}
+  
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+  
+nav .btn-nav {
+  background-color: #dddbdb;
+  border-radius: 5px;
+  color: #689ac9;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px auto;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+  
+nav .btn-nav:focus {
+  background-color: var(--main-color);
+  color: white;
+}
+  
+section#luas,
+section#keliling {
+  border: 3px solid var(--main-color);
+  display: none;
+  margin: 20px auto;
+}
+  
+.active {
+  display: block !important;
+}
+
+/* CSS Square Shape */
+figure img {
+  display: block;
+  height: auto;
+  margin: 30px auto 10px;
+  max-width: 100%;
+}
+  
+figcaption {
+  margin-bottom: 50px;
+  text-align: center;
+}
+/* End CSS Square Shape */
+  
+section#luas p,
+section#keliling p {
+  margin: 5px 0 5px 10px;
+}
+  
+section#luas > p:nth-of-type(2),
+section#keliling > p:nth-of-type(2) {
+  font-weight: 600;
+  text-align: center;
+}
+  
+hr {
+  margin: 15px auto;
+  width: 95%;
+}
+  
+section#luas h2:last-of-type,
+section#keliling h2:last-of-type {
+    text-align: center;
+}
+  
+input {
+    display: block;
+    font-size: 1.25em;
+    margin: 15px auto;
+    padding: 5px;
+    width: 90%;
+}
+  
+input:focus {
+    border-radius: 5px;
+    border: 2px ridge #689ac9;
+}
+  
+section#luas p:last-of-type span,
+section#keliling p:last-of-type span {
+    font-weight: 600;
+}
+  
+.btn-action {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1.5em;
+}
+  
+.btn-submit,
+.btn-reset {
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin: 15px auto;
+    max-width: 150px;
+    padding: 1em 2em;
+    width: 100%;
+}
+  
+.btn-submit {
+    background-color: var(--main-color);
+}
+  
+.btn-submit:hover {
+    background-color: #2c83bd;
+    cursor: pointer;
+}
+  
+.btn-reset {
+    background-color: #efa843;
+}
+  
+.btn-reset:hover {
+    background-color: #ffae3c;
+    cursor: pointer;
+}
+
+/* Media Quary untuk lebar layar minimal 640px */
+@media screen and (min-width: 640px) {
+    header a {
+      font-size: 3rem;
+}
+  
+nav {
+      flex-direction: row;
+}
+  
+nav .btn-nav {
+      width: calc(100% / 3);
+      max-width: 300px;
+}
+  
+ section#luas p,
+ section#keliling p {
+  margin: 10px 0 10px 35px;
+    }
+}
+/* End Media Quary */
+  
+footer {
+  background-color: var(--main-color);
+  color: white;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+}
+  
+footer p:not(footer p:first-of-type) {
+ margin: 13px 0 13px 15px;
+ text-align: center;
+}
+  
+  
+footer a {
+  color: #0E21A0;
+  font-weight: bold;
+  text-decoration: none;
+}
+  
+/* Browser scrollbar (!Important - Tidak berfungsi di mozilla firefox) */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+ background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #2c83bd;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+/* End Browser scrollbar */
+  

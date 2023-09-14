@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Matematik</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Katik <span>Kalkulator Matematik</span></a>
+        </header>
+
+        <main>
+            <section class="info">
+                <h1>Welcome to Katik</h1>
+                <p>Hai Sobat, Selamat datang di Katik :)</p>
+                <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+                <nav>
+                    <button type="button" class="btn-nav">Hitung Luas</button>
+                    <button type="button" class="btn-nav">Hitung Keliling</button>
+                </nav>
+            </section>
+
+            <section id="luas">
+                <h2>Luas Persegi</h2>
+                <figure>
+                    <img src="./images/Square.png" alt="Square Image"/>
+                    <figcaption>Bujur Sangkar</figcaption>
+                </figure>
+                <p>Rumus Luas Persegi yaitu :</p>
+                <p>L = S x S</p>
+                <p>Dimana :</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+                <hr />
+                <h2>Hitung Luas Persegi</h2>
+
+                <form method="post">
+                    <input type="number" name="number" id="numberLuas" required/>
+                    <p>L = S x S</p>
+                    <p>L = <span class="sisi1">0</span> x <span class="sisi2"></span></p>
+                    <p>L = <span>0</span></p>
+                    <div class="btn-action">
+                        <button type="submit" class="btn-submit">Hitung</button>
+                        <button type="reset" class="btn-reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="keliling">
+                <h2>Keliling Persegi</h2>
+                <figure>
+                <img src="./images/Square.png" alt="Square Image" />
+                <figcaption>Bujur Sangkar</figcaption>
+                </figure>
+                <p>Rumus Keliling Persegi yaitu:</p>
+                <p>K = 4 x S</p>
+                <p>Dimana:</p>
+                <p>S = Sisi</p>
+                <hr />
+                <h2>Hitung Keliling Persegi</h2>
+                <input type="number" id="numberKeliling" required />
+                <p>L = 4 x S</p>
+                <p>L = 4 x <span class="sisi1">0</span></p>
+                <p>L = <span>0</span></p>
+                <div class="btn-action">
+                <button type="submit" class="btn-submit">Hitung</button>
+                <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                dibuat oleh
+                &COPY;
+                <a
+                    href="https://github.com/rohim48"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Noer Rohim
+                </a>
+            </p>
+        </footer>
+
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>
